@@ -1,6 +1,11 @@
 // RESPONSIVE IMPLEMENTATION
 // these are just short cuts for using the cols mixin at different break points
 
+$screen-xs: 480px !default;
+$screen-sm: 768px !default;
+$screen-md: 992px !default;
+$screen-lg: 1200px !default;
+
 $xs-break: $screen-xs !default;
 $sm-break: $screen-sm !default;
 $md-break: $screen-md !default;

@@ -1,6 +1,12 @@
 $grid-gutter-width: 24px !default;
 $gutter: $grid-gutter-width;
-@for $i from 0 through 6 {
+
+$margin-gutters: 4 !default;
+$padding-gutters: 4 !default;
+$tablet-margin-gutters: 4 !default;
+$mobile-margin-gutters: 4 !default;
+
+@for $i from 0 through $margin-gutters {
   .m#{$i}  { margin: $i * $gutter; }
   .mt#{$i} { margin-top: $i * $gutter; }
   .mr#{$i} { margin-right: $i * $gutter; }
@@ -8,7 +14,7 @@ $gutter: $grid-gutter-width;
   .ml#{$i} { margin-left: $i * $gutter; }
 }
 
-@for $i from 0 through 4 {
+@for $i from 0 through $padding-gutters {
   .p#{$i}  { padding: $i * $gutter; }
   .pt#{$i} { padding-top: $i * $gutter; }
   .pr#{$i} { padding-right: $i * $gutter; }
@@ -17,7 +23,7 @@ $gutter: $grid-gutter-width;
 }
 
 @include bootstrap-only-tablet {
-  @for $i from 0 through 2 {
+  @for $i from 0 through $tablet-margin-gutters {
     .t-m#{$i}  { margin: $i * $gutter !important; }
     .t-mt#{$i} { margin-top: $i * $gutter !important; }
     .t-mr#{$i} { margin-right: $i * $gutter !important; }
@@ -27,7 +33,7 @@ $gutter: $grid-gutter-width;
 }
 
 @include bootstrap-only-mobile {
-  @for $i from 0 through 2 {
+  @for $i from 0 through $mobile-margin-gutters {
     .m-m#{$i}  { margin: $i * $gutter !important; }
     .m-mt#{$i} { margin-top: $i * $gutter !important; }
     .m-mr#{$i} { margin-right: $i * $gutter !important; }
