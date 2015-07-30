@@ -1,6 +1,4 @@
 // RESPONSIVE IMPLEMENTATION
-// these are just short cuts for using the cols mixin at different break points
-
 $screen-xs: 480px !default;
 $screen-sm: 768px !default;
 $screen-md: 992px !default;
@@ -86,7 +84,7 @@ $lg-break: $screen-lg !default;
 
 
 // ONLY Target XS Retina Devices
-@mixin retina-query-xs{
+@mixin retina-query-xs {
     @media  (max-width: $xs-break + 1px) and (-webkit-min-device-pixel-ratio: 1.5),
             (max-width: $xs-break + 1px) and (min--moz-device-pixel-ratio: 1.5),
             (max-width: $xs-break + 1px) and (-o-min-device-pixel-ratio: 3 / 2),
@@ -99,7 +97,7 @@ $lg-break: $screen-lg !default;
 
 // ONLY Target XS Retina Devices up to iPhone 5 landscape, use carefully
 // This is done as landscape iphone 5 is wider than 480px ($sm-break)
-@mixin retina-query-i5{
+@mixin retina-query-i5 {
     @media  (max-width: $iphone5width + 1px) and (-webkit-min-device-pixel-ratio: 1.5),
             (max-width: $iphone5width + 1px) and (min--moz-device-pixel-ratio: 1.5),
             (max-width: $iphone5width + 1px) and (-o-min-device-pixel-ratio: 3 / 2),
