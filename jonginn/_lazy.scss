@@ -2,7 +2,8 @@
   display: none;
 }
 
-img.b-lazy {
+img.b-lazy,
+.b-lazy.b-fade-in {
     -webkit-transition: opacity 500ms ease-in-out;
        -moz-transition: opacity 500ms ease-in-out;
          -o-transition: opacity 500ms ease-in-out;
@@ -11,6 +12,7 @@ img.b-lazy {
                opacity: 0;
 }
 
-img.b-lazy.b-loaded {
+img.b-lazy.b-loaded,
+.b-lazy.b-fade-in.b-loaded {
   opacity: 1;
 }
