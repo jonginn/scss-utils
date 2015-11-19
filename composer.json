@@ -1,5 +1,7 @@
 {
     "name": "jonginn/scss-utils",
+    "description": "A collection of useful scss utilities",
+    "license": "proprietary",
     "type": "front-end",
     "authors": [
         {
