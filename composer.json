@@ -1,0 +1,11 @@
+{
+    "name": "jonginn/scss-utils",
+    "type": "front-end",
+    "authors": [
+        {
+            "name": "Jonathan Ginn",
+            "email": "jon@wearebase.com"
+        }
+    ],
+    "require": {}
+}
